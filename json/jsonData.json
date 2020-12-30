@@ -1,9 +1,15 @@
 [
     {
-        "nama": "",
-        "alamat": "",
-        "notelp": "",
-        "narasi": "",
+        "nama": "Monumen Kapal Selam Surabaya",
+        "alamat": "Jl. Pemuda No.39 Embong Kaliasin Kec. Genteng, Kota Surabaya, Jawa Timur 60271",
+        "notelp": "(031) 5490410",
+        "narasi": "Monumen Kapal Selam, atau disingkat Monkasel, adalah sebuah museum kapal selam yang terdapat di Embong Kaliasin, Genteng, Surabaya. Terletak di pusat kota, monumen ini sebenarnya merupakan kapal selam KRI Pasopati 410, salah satu armada Angkatan Laut Republik Indonesia buatan Uni Soviet tahun 1952.",
+        "jadwal":[
+            "Senin - Jumat",
+            "09.00 - 17.00 WIB",
+            "Sabtu - Minggu",
+            "09.00 - 19.00 WIB"
+        ],
         "todos": [
             "Berenang",
             "Sight-See",
