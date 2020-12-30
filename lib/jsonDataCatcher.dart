@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+
 class Data {
   About about;
   ToDo toDo;
@@ -127,4 +131,9 @@ class Images {
     data['name'] = this.name;
     return data;
   }
+}
+
+Future<Data> getDataList() async {
+  var data = await rootBundle.loadString('json/jsonData.json');
+  return Data.fromJson(json.decode(data));
 }

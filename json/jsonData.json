@@ -51,19 +51,19 @@
     "images":[
         {
             "id": "1",
-            "name": "slide-1.jpg"
+            "name": "images/slide-1.jpg"
         },
         {
             "id": "2",
-            "name": "slide-2.jpg"
+            "name": "images/slide-2.jpg"
         },
         {
             "id": "3",
-            "name": "slide-3.jpg"
+            "name": "images/slide-3.jpg"
         },
         {
             "id": "4",
-            "name": "kapaluiui.jpg"
+            "name": "images/kapaluiui.jpg"
         }    
     ]
 }
