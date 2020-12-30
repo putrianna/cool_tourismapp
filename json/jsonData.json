@@ -3,6 +3,19 @@
         "nama": "",
         "alamat": "",
         "notelp": "",
-        "narasi": ""
+        "narasi": "",
+        "todos": [
+            "Berenang",
+            "Sight-See",
+            "Kuliner",
+            "Berfoto",
+            "Belajar",
+            "Hangout"
+        ],
+        "fasil": [
+            "Parking Lot",
+            "Swimming Pool",
+            "Food & Drinks"
+        ]
     }
 ]
