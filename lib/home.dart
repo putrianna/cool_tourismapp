@@ -28,32 +28,55 @@ class _HomeState extends State<Home> {
             if (snapshot.data == null) {
               return Container(child: Center(child: Text("Loading...")));
             } else {
-              return Container(
-                child: Container(
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      Container(
-                        width: 200,
-                        child: Image(
-                          image: AssetImage('${snapshot.data.images[0].name}'),
-                        ),
+              return Column(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Container(
+                            width: 400,
+                            margin: EdgeInsets.only(right: 5, bottom: 10),
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    '${snapshot.data.images[0].name}'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 400,
+                            margin: EdgeInsets.only(right: 5, bottom: 10),
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    '${snapshot.data.images[1].name}'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 400,
+                            margin: EdgeInsets.only(bottom: 10),
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    '${snapshot.data.images[2].name}'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                      Container(
-                        width: 200,
-                        child: Image(
-                          image: AssetImage('${snapshot.data.images[0].name}'),
-                        ),
-                      ),
-                      Container(
-                        width: 200,
-                        child: Image(
-                          image: AssetImage('${snapshot.data.images[0].name}'),
-                        ),
-                      )
-                    ],
+                    ),
                   ),
-                ),
+                  Container(
+                    height: 400,
+                  )
+                ],
               );
             }
           }),
