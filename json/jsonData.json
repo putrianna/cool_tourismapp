@@ -1,5 +1,5 @@
-[
-    {
+{ 
+    "About":{
         "nama": "Monumen Kapal Selam Surabaya",
         "alamat": "Jl. Pemuda No.39 Embong Kaliasin Kec. Genteng, Kota Surabaya, Jawa Timur 60271",
         "notelp": "(031) 5490410",
@@ -9,7 +9,9 @@
             "09.00 - 17.00 WIB",
             "Sabtu - Minggu",
             "09.00 - 19.00 WIB"
-        ],
+        ]
+    },
+    "to-do":{
         "todos": [
             "Berenang",
             "Sight-See",
@@ -23,5 +25,45 @@
             "Swimming Pool",
             "Food & Drinks"
         ]
-    }
-]
+    },
+    "histori":[
+        {
+            "img": "images/histori-1.png",
+            "tanggal": "1952",
+            "event": "kapal selam KRI Pasopati 410 dibuat oleh Uni Soviet"
+        },
+        {
+            "img": "images/histori-2.jpg",
+            "tanggal": "1962",
+            "event": "Dilibatkan dalam Pertempuran Laut Aru"
+        },
+        {
+            "img": "images/histori-3.jpg",
+            "tanggal": "1962",
+            "event": "Menjadi salah satu tulang punggung kekuatan TNI AL"
+        },
+        {
+            "img": "images/kapaluiui.jpg",
+            "tanggal": "1998",
+            "event": "Monumen Kapal Selam didirikan"
+        }
+    ],
+    "images":[
+        {
+            "id": "1",
+            "name": "images/slide-1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "images/slide-2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "images/slide-3.jpg"
+        },
+        {
+            "id": "4",
+            "name": "images/kapaluiui.jpg"
+        }    
+    ]
+}
