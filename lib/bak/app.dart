@@ -19,22 +19,22 @@ class AppState extends State<App> {
     TabItem(
       tabName: "Home",
       icon: Icons.home,
-      page: MyHomePage(),
+      page: null,
     ),
     TabItem(
       tabName: "What-To-Do",
       icon: Icons.explore,
-      page: MyHomePage(),
+      page: null,
     ),
     TabItem(
       tabName: "History",
       icon: Icons.history,
-      page: MyHomePage(),
+      page: null,
     ),
     TabItem(
       tabName: "About Us",
       icon: Icons.info,
-      page: MyHomePage(),
+      page: null,
     ),
   ];
 
