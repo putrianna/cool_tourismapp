@@ -11,6 +11,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  //inisialisasi TextStyle untuk header dan jadwal
+  static TextStyle headerStyle = TextStyle(
+      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
+
   Future<Data> data;
 
   @override
@@ -32,6 +36,7 @@ class _HomeState extends State<Home> {
             } else {
               return Column(
                 children: [
+                  //Slider image. Mungkin bakal aku ganti pake builder :D
                   Expanded(
                     flex: 1,
                     child: Container(
@@ -75,17 +80,20 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  //Badan teks :3
                   Container(
                     height: 400,
                     child: Column(
                       children: [
                         Expanded(
                           child: Container(
+                            padding: EdgeInsets.all(20),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   "About",
-                                  style: TextStyle(color: HexColor("#A15D98")),
+                                  style: headerStyle,
                                 ),
                                 Text('${snapshot.data.about.narasi}')
                               ],
