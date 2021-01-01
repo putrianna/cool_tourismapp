@@ -1,6 +1,7 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:cool_tourismapp/home.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 //Done! The code is still spaghetti AF tho. I'll come back and fix later!
 //If you can find a way to improve the code, let me know! :D - Putri Anna
@@ -82,25 +83,30 @@ class _TodoState extends State<Todo> {
                   //Badan teks :3
                   Expanded(
                     flex: 2,
-                    child: Wrap(
-                      children: [
-                        Text(
-                          "What to Do?",
-                          style: headerStyle,
-                        ),
-                        Container(
-                            height: 300,
-                            child: GridView.count(
-                                scrollDirection: Axis.vertical,
-                                crossAxisCount: 3,
-                                children: List.generate(50, (index) {
-                                  return Container(
-                                    child: Card(
-                                      color: Colors.amber,
-                                    ),
-                                  );
-                                })))
-                      ],
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      child: Wrap(
+                        children: [
+                          Text(
+                            "What to Do?",
+                            style: headerStyle,
+                          ),
+                          Container(
+                              padding: EdgeInsets.only(left: 20, right: 20),
+                              height: 300,
+                              child: GridView.count(
+                                  scrollDirection: Axis.vertical,
+                                  crossAxisCount: 3,
+                                  children: List.generate(50, (index) {
+                                    return Container(
+                                      child: Card(
+                                        child: Icon(FontAwesomeIcons.gamepad),
+                                        color: Colors.amber,
+                                      ),
+                                    );
+                                  })))
+                        ],
+                      ),
                     ),
                   )
                 ],
