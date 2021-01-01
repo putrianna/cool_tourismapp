@@ -1,7 +1,6 @@
 import 'package:cool_tourismapp/contactus.dart';
 import 'package:cool_tourismapp/home.dart';
 import 'package:flutter/material.dart';
-import 'bak/app.dart';
 
 void main() => runApp(MyApp());
 
@@ -42,10 +41,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     ContactUs(),
-    // Text(
-    //   'Index 3: About Us',
-    //   style: optionStyle,
-    // ),
   ];
 
   void _onItemTapped(int index) {
@@ -82,6 +77,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         currentIndex: _selectedIndex,
         selectedItemColor: Color.fromARGB(255, 115, 75, 118),
         unselectedItemColor: Colors.black54,
+        backgroundColor: Colors.white,
+        elevation: 12,
         onTap: _onItemTapped,
       ),
     );
