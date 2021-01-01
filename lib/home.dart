@@ -33,7 +33,6 @@ class _HomeState extends State<Home> {
       child: FutureBuilder(
           future: data,
           builder: (BuildContext context, AsyncSnapshot snapshot) {
-            print(snapshot.data);
             if (snapshot.data == null) {
               return Container(child: Center(child: Text("Loading...")));
             } else {
