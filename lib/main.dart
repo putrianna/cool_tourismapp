@@ -2,10 +2,6 @@ import 'package:cool_tourismapp/contactus.dart';
 import 'package:cool_tourismapp/home.dart';
 import 'package:cool_tourismapp/todo.dart';
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
-=======
-//import 'bak/app.dart';
->>>>>>> Stashed changes
 
 void main() => runApp(MyApp());
 
