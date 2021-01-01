@@ -14,6 +14,8 @@ class _HomeState extends State<Home> {
   //inisialisasi TextStyle untuk header dan jadwal
   static TextStyle headerStyle = TextStyle(
       fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
+  static TextStyle narasiStyle =
+      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
 
   Future<Data> data;
 
@@ -81,26 +83,28 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   //Badan teks :3
-                  Container(
-                    height: 400,
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Container(
+                  Expanded(
+                    child: Container(
+                      height: 400,
+                      child: Column(
+                        children: [
+                          Container(
                             padding: EdgeInsets.all(20),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            child: Wrap(
+                              spacing: 20,
+                              runSpacing: 15,
                               children: [
                                 Text(
                                   "About",
                                   style: headerStyle,
                                 ),
-                                Text('${snapshot.data.about.narasi}')
+                                Text('${snapshot.data.about.narasi}',
+                                    style: narasiStyle)
                               ],
                             ),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   )
                 ],
