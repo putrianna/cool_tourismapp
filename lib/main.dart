@@ -1,6 +1,11 @@
 import 'package:cool_tourismapp/contactus.dart';
 import 'package:cool_tourismapp/home.dart';
+import 'package:cool_tourismapp/todo.dart';
 import 'package:flutter/material.dart';
+<<<<<<< Updated upstream
+=======
+//import 'bak/app.dart';
+>>>>>>> Stashed changes
 
 void main() => runApp(MyApp());
 
@@ -32,10 +37,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
-    Text(
-      'Index 1: What-To-DO',
-      style: optionStyle,
-    ),
+    Todo(),
     Text(
       'Index 2: History',
       style: optionStyle,
