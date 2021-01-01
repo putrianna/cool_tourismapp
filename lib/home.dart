@@ -167,4 +167,9 @@ class TemaTeks {
       TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
   static TextStyle timeStyle = TextStyle(
       fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
+  static TextStyle iconStyle = TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w300,
+      fontStyle: FontStyle.italic,
+      color: HexColor("#A15D98"));
 }
