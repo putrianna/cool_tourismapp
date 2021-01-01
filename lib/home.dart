@@ -2,8 +2,8 @@ import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-//void main() => runApp(Home());
-//I'll work on Home! Leave this page to meh XD - Putri Anna
+//Done! The code is still spaghetti AF tho. I'll come back and fix later!
+//If you can find a way to improve the code, let me know! :D - Putri Anna
 
 class Home extends StatefulWidget {
   @override
@@ -16,7 +16,8 @@ class _HomeState extends State<Home> {
       fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
   static TextStyle narasiStyle =
       TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
-
+  static TextStyle timeStyle = TextStyle(
+      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
   Future<Data> data;
 
   @override
@@ -47,7 +48,8 @@ class _HomeState extends State<Home> {
                         children: <Widget>[
                           Container(
                             width: 400,
-                            margin: EdgeInsets.only(right: 5, bottom: 10),
+                            height: 200,
+                            margin: EdgeInsets.only(right: 5, bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
@@ -58,7 +60,8 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: 400,
-                            margin: EdgeInsets.only(right: 5, bottom: 10),
+                            height: 200,
+                            margin: EdgeInsets.only(right: 5, bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
@@ -69,7 +72,8 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: 400,
-                            margin: EdgeInsets.only(bottom: 10),
+                            height: 200,
+                            margin: EdgeInsets.only(bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
@@ -86,13 +90,13 @@ class _HomeState extends State<Home> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Container(
-                        //height: 1000,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               padding: EdgeInsets.all(20),
                               child: Wrap(
-                                spacing: 20,
+                                spacing: 10,
                                 runSpacing: 15,
                                 children: [
                                   Text(
@@ -105,13 +109,48 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             Container(
+                              height: 200,
                               padding: EdgeInsets.all(20),
                               child: Wrap(
+                                spacing: 20,
+                                runSpacing: 15,
                                 children: [
                                   Text(
                                     "Jam Buka",
                                     style: headerStyle,
                                   ),
+                                  Wrap(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            '${snapshot.data.about.jadwal[0]}',
+                                            style: narasiStyle,
+                                          ),
+                                          Text(
+                                            '${snapshot.data.about.jadwal[1]}',
+                                            style: timeStyle,
+                                          )
+                                        ],
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            '${snapshot.data.about.jadwal[2]}',
+                                            style: narasiStyle,
+                                          ),
+                                          Text(
+                                            '${snapshot.data.about.jadwal[3]}',
+                                            style: timeStyle,
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  )
                                 ],
                               ),
                             )
