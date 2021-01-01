@@ -1,5 +1,6 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 //void main() => runApp(Home());
 //I'll work on Home! Leave this page to meh XD - Putri Anna
@@ -76,6 +77,23 @@ class _HomeState extends State<Home> {
                   ),
                   Container(
                     height: 400,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Text(
+                                  "About",
+                                  style: TextStyle(color: HexColor("#A15D98")),
+                                ),
+                                Text('${snapshot.data.about.narasi}')
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               );
