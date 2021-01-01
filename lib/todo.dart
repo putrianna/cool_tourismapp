@@ -27,6 +27,29 @@ class _TodoState extends State<Todo> {
     data = getDataList();
   }
 
+  IconData fontAwesomeString(String name) {
+    switch (name) {
+      case 'swimmer':
+        return FontAwesomeIcons.swimmer;
+      case 'binoculars':
+        return FontAwesomeIcons.binoculars;
+      case 'hamburger':
+        return FontAwesomeIcons.hamburger;
+      case 'camera':
+        return FontAwesomeIcons.camera;
+      case 'book':
+        return FontAwesomeIcons.book;
+      case 'userFriends':
+        return FontAwesomeIcons.userFriends;
+      case 'car':
+        return FontAwesomeIcons.car;
+      case 'swimmingPool':
+        return FontAwesomeIcons.swimmingPool;
+      case 'fastfood':
+        return Icons.fastfood;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -94,17 +117,28 @@ class _TodoState extends State<Todo> {
                           Container(
                               padding: EdgeInsets.only(left: 20, right: 20),
                               height: 300,
-                              child: GridView.count(
-                                  scrollDirection: Axis.vertical,
-                                  crossAxisCount: 3,
-                                  children: List.generate(50, (index) {
+                              child: GridView.builder(
+                                  itemCount: snapshot.data.toDo.todos.length,
+                                  gridDelegate:
+                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 3,
+                                    crossAxisSpacing: 10.0,
+                                    mainAxisSpacing: 10.0,
+                                  ),
+                                  itemBuilder:
+                                      (BuildContext context, int index) {
                                     return Container(
-                                      child: Card(
-                                        child: Icon(FontAwesomeIcons.gamepad),
-                                        color: Colors.amber,
-                                      ),
+                                      height: 50,
+                                      color: Colors.amber,
+                                      child: Center(
+                                          child: Column(
+                                        children: [
+                                          Icon(fontAwesomeString(snapshot
+                                              .data.toDo.todos[index].nama))
+                                        ],
+                                      )),
                                     );
-                                  })))
+                                  }))
                         ],
                       ),
                     ),

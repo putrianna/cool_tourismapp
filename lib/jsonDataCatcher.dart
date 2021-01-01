@@ -74,20 +74,72 @@ class About {
 }
 
 class ToDo {
-  List<String> todos;
-  List<String> fasil;
+  List<Todos> todos;
+  List<Fasil> fasil;
 
   ToDo({this.todos, this.fasil});
 
   ToDo.fromJson(Map<String, dynamic> json) {
-    todos = json['todos'].cast<String>();
-    fasil = json['fasil'].cast<String>();
+    if (json['todos'] != null) {
+      todos = new List<Todos>();
+      json['todos'].forEach((v) {
+        todos.add(new Todos.fromJson(v));
+      });
+    }
+    if (json['fasil'] != null) {
+      fasil = new List<Fasil>();
+      json['fasil'].forEach((v) {
+        fasil.add(new Fasil.fromJson(v));
+      });
+    }
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['todos'] = this.todos;
-    data['fasil'] = this.fasil;
+    if (this.todos != null) {
+      data['todos'] = this.todos.map((v) => v.toJson()).toList();
+    }
+    if (this.fasil != null) {
+      data['fasil'] = this.fasil.map((v) => v.toJson()).toList();
+    }
+    return data;
+  }
+}
+
+class Todos {
+  String nama;
+  String text;
+
+  Todos({this.nama, this.text});
+
+  Todos.fromJson(Map<String, dynamic> json) {
+    nama = json['nama'];
+    text = json['text'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['nama'] = this.nama;
+    data['text'] = this.text;
+    return data;
+  }
+}
+
+class Fasil {
+  String nama;
+  String text;
+
+  Fasil({this.nama, this.text});
+
+  Fasil.fromJson(Map<String, dynamic> json) {
+    nama = json['nama'];
+    text = json['text'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['nama'] = this.nama;
+    data['text'] = this.text;
     return data;
   }
 }

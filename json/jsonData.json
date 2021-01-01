@@ -13,17 +13,44 @@
     },
     "to-do":{
         "todos": [
-            "Berenang",
-            "Sight-See",
-            "Kuliner",
-            "Berfoto",
-            "Belajar",
-            "Hangout"
+            {
+                "nama": "swimmer",
+                "text": "Berenang"
+            },
+            {
+                "nama": "binoculars",
+                "text": "Sight-See"
+            },
+            {
+                "nama": "hamburger",
+                "text": "Kuliner"
+            },
+            {
+                "nama": "camera",
+                "text": "Berfoto"
+            },
+            {
+                "nama": "book",
+                "text": "Belajar"
+            },
+            {
+                "nama": "userFriends",
+                "text": "Hangout"
+            }
         ],
         "fasil": [
-            "Parking Lot",
-            "Swimming Pool",
-            "Food & Drinks"
+            {
+                "nama": "car",
+                "text": "Parking Lot"
+            },
+            {
+                "nama": "swimmingPool",
+                "text": "Swimming Pool"
+            },
+            {
+                "nama": "fastfood",
+                "text": "Food & Drinks"
+            }
         ]
     },
     "histori":[
