@@ -39,52 +39,50 @@ class _HomeState extends State<Home> {
               return Column(
                 children: [
                   //Slider image. Mungkin bakal aku ganti pake builder :D
-                  Container(
-                    height: 250,
-                    child: Expanded(
-                      flex: 1,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: <Widget>[
-                          Container(
-                            width: 400,
-                            margin: EdgeInsets.only(right: 5, bottom: 5),
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    '${snapshot.data.images[0].name}'),
-                                fit: BoxFit.cover,
-                              ),
+                  Expanded(
+                    flex: 1,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          width: 400,
+                          margin: EdgeInsets.only(right: 5, bottom: 5),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image:
+                                  AssetImage('${snapshot.data.images[0].name}'),
+                              fit: BoxFit.cover,
                             ),
                           ),
-                          Container(
-                            width: 400,
-                            margin: EdgeInsets.only(right: 5, bottom: 5),
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    '${snapshot.data.images[1].name}'),
-                                fit: BoxFit.cover,
-                              ),
+                        ),
+                        Container(
+                          width: 400,
+                          margin: EdgeInsets.only(right: 5, bottom: 5),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image:
+                                  AssetImage('${snapshot.data.images[1].name}'),
+                              fit: BoxFit.cover,
                             ),
                           ),
-                          Container(
-                            width: 400,
-                            margin: EdgeInsets.only(bottom: 5),
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    '${snapshot.data.images[2].name}'),
-                                fit: BoxFit.cover,
-                              ),
+                        ),
+                        Container(
+                          width: 400,
+                          margin: EdgeInsets.only(bottom: 5),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image:
+                                  AssetImage('${snapshot.data.images[2].name}'),
+                              fit: BoxFit.cover,
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   //Badan teks :3
                   Expanded(
+                    flex: 2,
                     child: SingleChildScrollView(
                       child: Container(
                         child: Column(
