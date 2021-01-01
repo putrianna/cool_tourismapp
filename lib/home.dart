@@ -12,12 +12,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   //inisialisasi TextStyle untuk header dan jadwal
-  static TextStyle headerStyle = TextStyle(
-      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
-  static TextStyle narasiStyle =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
-  static TextStyle timeStyle = TextStyle(
-      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
+  TextStyle headerStyle = TemaTeks.headerStyle;
+  TextStyle narasiStyle = TemaTeks.narasiStyle;
+  TextStyle timeStyle = TemaTeks.timeStyle;
+
   Future<Data> data;
 
   @override
@@ -160,4 +158,13 @@ class _HomeState extends State<Home> {
           }),
     );
   }
+}
+
+class TemaTeks {
+  static TextStyle headerStyle = TextStyle(
+      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
+  static TextStyle narasiStyle =
+      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
+  static TextStyle timeStyle = TextStyle(
+      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
 }
