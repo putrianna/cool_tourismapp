@@ -1,8 +1,11 @@
+import 'package:cool_tourismapp/jsonDataCatcher.dart';
+import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:cool_tourismapp/contactus.dart';
 import 'package:cool_tourismapp/home.dart';
 import 'package:cool_tourismapp/todo.dart';
 import 'package:flutter/material.dart';
-import 'bak/app.dart';
+//import 'bak/app.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,25 +32,19 @@ class MyStatefulWidget extends StatefulWidget {
 
 /// This is the private State class that goes with MyStatefulWidget.
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  var data = Snapshot.getDataList();
+
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Todo(),
-    // Text(
-    //   'Index 1: What-To-DO',
-    //   style: optionStyle,
-    // ),
     Text(
       'Index 2: History',
       style: optionStyle,
     ),
     ContactUs(),
-    // Text(
-    //   'Index 3: About Us',
-    //   style: optionStyle,
-    // ),
   ];
 
   void _onItemTapped(int index) {
@@ -59,9 +56,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+      body: Container(
+      child: FutureBuilder(
+          future: data,
+          builder: (BuildContext context, AsyncSnapshot snapshot) {
+            if (snapshot.data == null) {
+              return Container(child: Center(child: Text("Loading...")));
+            } else {
+              return Center(child: _widgetOptions.elementAt(_selectedIndex),),
+            }
+          }
+      ),),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -88,4 +93,42 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
     );
   }
+}
+
+
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  //inisialisasi TextStyle untuk header dan jadwal
+  TextStyle headerStyle = TemaTeks.headerStyle;
+  TextStyle narasiStyle = TemaTeks.narasiStyle;
+  TextStyle timeStyle = TemaTeks.timeStyle;
+
+  Future<Data> data;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    data = getDataList();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return 
+      );
+          }
+}
+
+class TemaTeks {
+  static TextStyle headerStyle = TextStyle(
+      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
+  static TextStyle narasiStyle =
+      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
+  static TextStyle timeStyle = TextStyle(
+      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
 }

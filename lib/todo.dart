@@ -1,17 +1,18 @@
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:cool_tourismapp/home.dart';
 
 //Done! The code is still spaghetti AF tho. I'll come back and fix later!
 //If you can find a way to improve the code, let me know! :D - Putri Anna
 
-class Home extends StatefulWidget {
+class Todo extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _TodoState createState() => _TodoState();
 }
 
-class _HomeState extends State<Home> {
-  //inisialisasi TextStyle untuk header dan jadwal
+class _TodoState extends State<Todo> {
   TextStyle headerStyle = TemaTeks.headerStyle;
   TextStyle narasiStyle = TemaTeks.narasiStyle;
   TextStyle timeStyle = TemaTeks.timeStyle;
@@ -31,6 +32,7 @@ class _HomeState extends State<Home> {
       child: FutureBuilder(
           future: data,
           builder: (BuildContext context, AsyncSnapshot snapshot) {
+            print(snapshot.data);
             if (snapshot.data == null) {
               return Container(child: Center(child: Text("Loading...")));
             } else {
@@ -162,13 +164,4 @@ class _HomeState extends State<Home> {
           }),
     );
   }
-}
-
-class TemaTeks {
-  static TextStyle headerStyle = TextStyle(
-      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
-  static TextStyle narasiStyle =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
-  static TextStyle timeStyle = TextStyle(
-      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
 }
