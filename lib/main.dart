@@ -1,10 +1,11 @@
 import 'package:cool_tourismapp/contactus.dart';
 import 'package:cool_tourismapp/home.dart';
+import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:cool_tourismapp/todo.dart';
 import 'package:flutter/material.dart';
 import 'bak/app.dart';
 
-void main() => runApp(MyApp());
+//void main() => runApp(MyApp());
 
 /// This is the main application widget.
 class MyApp extends StatelessWidget {
