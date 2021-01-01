@@ -2,6 +2,7 @@ import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:flutter/material.dart';
 
 //void main() => runApp(Home());
+//I'll work on Home! Leave this page to meh XD - Putri Anna
 
 class Home extends StatefulWidget {
   @override
