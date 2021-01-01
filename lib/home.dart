@@ -39,15 +39,15 @@ class _HomeState extends State<Home> {
               return Column(
                 children: [
                   //Slider image. Mungkin bakal aku ganti pake builder :D
-                  Expanded(
-                    flex: 1,
-                    child: Container(
+                  Container(
+                    height: 250,
+                    child: Expanded(
+                      flex: 1,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
                             width: 400,
-                            height: 200,
                             margin: EdgeInsets.only(right: 5, bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
@@ -59,7 +59,6 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: 400,
-                            height: 200,
                             margin: EdgeInsets.only(right: 5, bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
@@ -71,7 +70,6 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: 400,
-                            height: 200,
                             margin: EdgeInsets.only(bottom: 5),
                             decoration: BoxDecoration(
                               image: DecorationImage(
