@@ -33,11 +33,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Text(
-      'Index 1: Business',
+      'Index 1: What-To-DO',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Index 2: History',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 3: About Us',
       style: optionStyle,
     ),
   ];
@@ -61,12 +65,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.explore),
+            label: 'What-To-Do',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.history),
+            label: 'History',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'About Us',
           ),
         ],
         currentIndex: _selectedIndex,
