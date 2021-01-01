@@ -15,25 +15,58 @@ class _ContactUs extends State<ContactUs> {
     data = getDataList();
   }
 
+  void richText() {
+    RichText(
+      text: TextSpan(
+        text: 'Hello ',
+        style: DefaultTextStyle.of(context).style,
+        children: <TextSpan>[
+          TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
+          TextSpan(text: ' world!'),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //   child: FutureBuilder(
-    //     future: data,
-    //     builder: (BuildContext context, AsyncSnapshot snapshot) {
-    //       print(snapshot.data);
-    //     },
-    //   ),
-    // );
-
     return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Container(
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("images/bgUI.JPG"), fit: BoxFit.cover)),
-        child: Scaffold(
-          backgroundColor: Colors.transparent,
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("images/bgUI.JPG"), fit: BoxFit.cover)),
+          child: Stack(
+            children: <Widget>[
+              Container(
+                child: Scaffold(
+                  backgroundColor: Color.fromARGB(35, 0, 0, 0),
+                ),
+              ),
+              Container(
+                child: Center(
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                    child: InkWell(
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () {
+                        print('Card tapped.');
+                      },
+                      child: Container(
+                        width: 300,
+                        height: 100,
+                        child: Center(
+                          child: Text('A card that can be tapped'),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
