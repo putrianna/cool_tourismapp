@@ -84,26 +84,39 @@ class _HomeState extends State<Home> {
                   ),
                   //Badan teks :3
                   Expanded(
-                    child: Container(
-                      height: 400,
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.all(20),
-                            child: Wrap(
-                              spacing: 20,
-                              runSpacing: 15,
-                              children: [
-                                Text(
-                                  "About",
-                                  style: headerStyle,
-                                ),
-                                Text('${snapshot.data.about.narasi}',
-                                    style: narasiStyle)
-                              ],
+                    child: SingleChildScrollView(
+                      child: Container(
+                        //height: 1000,
+                        child: Column(
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              child: Wrap(
+                                spacing: 20,
+                                runSpacing: 15,
+                                children: [
+                                  Text(
+                                    "About",
+                                    style: headerStyle,
+                                  ),
+                                  Text('${snapshot.data.about.narasi}',
+                                      style: narasiStyle)
+                                ],
+                              ),
                             ),
-                          )
-                        ],
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              child: Wrap(
+                                children: [
+                                  Text(
+                                    "Jam Buka",
+                                    style: headerStyle,
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   )
