@@ -12,9 +12,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   //inisialisasi TextStyle untuk header dan jadwal
-  TextStyle headerStyle = TemaTeks.headerStyle;
-  TextStyle narasiStyle = TemaTeks.narasiStyle;
-  TextStyle timeStyle = TemaTeks.timeStyle;
+  TextStyle headerStyle = Komponen.headerStyle;
+  TextStyle narasiStyle = Komponen.narasiStyle;
+  TextStyle timeStyle = Komponen.timeStyle;
 
   Future<Data> data;
 

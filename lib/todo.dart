@@ -13,10 +13,10 @@ class Todo extends StatefulWidget {
 class _TodoState extends State<Todo> {
   //inisialisasi TextStyle untuk header dan jadwal
 
-  final fontString = IconString();
-  TextStyle headerStyle = TemaTeks.headerStyle;
-  TextStyle iconStyle = TemaTeks.iconStyle;
-  TextStyle timeStyle = TemaTeks.timeStyle;
+  final komponen = Komponen();
+  TextStyle headerStyle = Komponen.headerStyle;
+  TextStyle iconStyle = Komponen.iconStyle;
+  TextStyle timeStyle = Komponen.timeStyle;
 
   Future<Data> data;
 
@@ -117,7 +117,7 @@ class _TodoState extends State<Todo> {
                                                   MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Icon(
-                                                  fontString.fontAwesomeString(
+                                                  komponen.fontAwesomeString(
                                                       snapshot.data.toDo
                                                           .todos[index].nama),
                                                   size: 40,
@@ -164,7 +164,7 @@ class _TodoState extends State<Todo> {
                                                   MainAxisAlignment.spaceAround,
                                               children: [
                                                 Icon(
-                                                  fontString.fontAwesomeString(
+                                                  komponen.fontAwesomeString(
                                                       snapshot.data.toDo
                                                           .fasil[index].nama),
                                                   size: 40,

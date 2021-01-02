@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class TemaTeks {
+class Komponen {
   static TextStyle headerStyle = TextStyle(
       fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
   static TextStyle narasiStyle =
@@ -14,9 +14,7 @@ class TemaTeks {
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.italic,
       color: HexColor("#A15D98"));
-}
 
-class IconString {
   IconData fontAwesomeString(String name) {
     switch (name) {
       case 'swimmer':
