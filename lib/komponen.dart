@@ -14,6 +14,8 @@ class Komponen {
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.italic,
       color: HexColor("#A15D98"));
+  static TextStyle eventStyle = TextStyle(
+      fontSize: 13, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic);
 
   IconData fontAwesomeString(String name) {
     switch (name) {

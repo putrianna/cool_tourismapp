@@ -1,4 +1,5 @@
 import 'package:cool_tourismapp/contactus.dart';
+import 'package:cool_tourismapp/monkasel/history.dart';
 import 'package:cool_tourismapp/monkasel/home.dart';
 import 'package:cool_tourismapp/monkasel/todo.dart';
 import 'package:flutter/material.dart';
@@ -19,10 +20,7 @@ class _NavbarState extends State<Navbar> {
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Todo(),
-    Text(
-      'Index 2: History',
-      style: optionStyle,
-    ),
+    History(),
     ContactUs(),
   ];
 
@@ -35,6 +33,13 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Center(
+          child: Text('Monumen Kapal Selam'),
+        ),
+        automaticallyImplyLeading: true,
+        backgroundColor: Color.fromARGB(255, 115, 75, 118),
+      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
