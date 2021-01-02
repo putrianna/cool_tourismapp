@@ -3,6 +3,7 @@ import 'package:cool_tourismapp/monkasel/history.dart';
 import 'package:cool_tourismapp/monkasel/home.dart';
 import 'package:cool_tourismapp/monkasel/todo.dart';
 import 'package:flutter/material.dart';
+import 'package:cool_tourismapp/landingPage.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class Navbar extends StatefulWidget {
@@ -22,6 +23,7 @@ class _NavbarState extends State<Navbar> {
     Todo(),
     History(),
     ContactUs(),
+    LandingPage(), //dont remove it
   ];
 
   void _onItemTapped(int index) {
@@ -60,6 +62,11 @@ class _NavbarState extends State<Navbar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             label: 'About Us',
+          ),
+          BottomNavigationBarItem(
+            //dont remove it
+            icon: Icon(Icons.warning),
+            label: 'Experimental',
           ),
         ],
         currentIndex: _selectedIndex,
