@@ -43,23 +43,38 @@ class _ContactUs extends State<ContactUs> {
                   backgroundColor: Color.fromARGB(35, 0, 0, 0),
                 ),
               ),
+              Container(child: Center(child: Text("ABC"))),
               Container(
                 child: Center(
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
-                    child: InkWell(
-                      splashColor: Colors.blue.withAlpha(30),
-                      onTap: () {
-                        print('Card tapped.');
-                      },
-                      child: Container(
-                        width: 300,
-                        height: 100,
-                        child: Center(
-                          child: Text('A card that can be tapped'),
-                        ),
+                    child: Container(
+                      width: 300,
+                      height: 180,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          const ListTile(
+                            leading: Icon(
+                              Icons.map,
+                              color: Color.fromARGB(255, 115, 75, 118),
+                            ),
+                            title: Text('Alamat'),
+                            subtitle: Text(
+                                'Jl. Pemuda No.39 Embong Kaliasin Kec. Genteng, Kota Surabaya, Jawa Timur 60271'),
+                          ),
+                          const ListTile(
+                            leading: Icon(
+                              Icons.phone,
+                              color: Color.fromARGB(255, 115, 75, 118),
+                            ),
+                            title: Text('Nomor Telepon'),
+                            subtitle: Text('(031) 5490410'),
+                          ),
+                        ],
                       ),
                     ),
                   ),
