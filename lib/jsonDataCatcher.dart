@@ -184,7 +184,8 @@ class Images {
   }
 }
 
+//Data Monkasel
 Future<Data> getDataList() async {
-  var data = await rootBundle.loadString('json/jsonData.json');
+  var data = await rootBundle.loadString('json/jsonMonkasel.json');
   return Data.fromJson(json.decode(data));
 }
