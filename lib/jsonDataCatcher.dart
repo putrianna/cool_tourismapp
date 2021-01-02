@@ -189,3 +189,18 @@ Future<Data> getDataList() async {
   var data = await rootBundle.loadString('json/jsonMonkasel.json');
   return Data.fromJson(json.decode(data));
 }
+
+Future<Data> getBungkulList() async {
+  var data = await rootBundle.loadString('json/jsonBungkul.json');
+  return Data.fromJson(json.decode(data));
+}
+
+Future<Data> getKlentengList() async {
+  var data = await rootBundle.loadString('json/jsonKlenteng.json');
+  return Data.fromJson(json.decode(data));
+}
+
+Future<Data> getPakuwonList() async {
+  var data = await rootBundle.loadString('json/jsonPakuwon.json');
+  return Data.fromJson(json.decode(data));
+}
