@@ -22,12 +22,13 @@ class _LandingPage extends State<LandingPage> {
         body: Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("images/bgUI.JPG"), fit: BoxFit.cover)),
+                  image: AssetImage("images/landingUI.jpg"),
+                  fit: BoxFit.cover)),
           child: Stack(
             children: <Widget>[
               Container(
                 child: Scaffold(
-                  backgroundColor: Color.fromARGB(35, 0, 0, 0),
+                  backgroundColor: Color.fromARGB(50, 0, 0, 0),
                 ),
               ),
               Container(
@@ -43,13 +44,13 @@ class _LandingPage extends State<LandingPage> {
                         },
                         child: Container(
                           width: 320,
-                          height: 50,
+                          height: 45,
                           child: Center(
                             child: Text(
                               'Start The Tour!',
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 18,
+                                  fontSize: 22,
                                   fontFamily: 'Segoe UI'),
                             ),
                           ),
@@ -59,6 +60,52 @@ class _LandingPage extends State<LandingPage> {
                   ),
                 ),
               ),
+              Container(
+                child: Stack(
+                  children: <Widget>[
+                    Container(
+                      child: Align(
+                        alignment: FractionalOffset(0.1, 0.125),
+                        child: Text(
+                          "Welcome to",
+                          style: TextStyle(
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 191, 201, 225),
+                            shadows: <Shadow>[
+                              Shadow(
+                                offset: Offset(0.2, 0.2),
+                                blurRadius: 5.0,
+                                color: Color.fromARGB(75, 0, 0, 0),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      child: Align(
+                        alignment: FractionalOffset(0.24, 0.2),
+                        child: Text(
+                          "Wisata Soerabaja",
+                          style: TextStyle(
+                            fontSize: 34,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 232, 237, 246),
+                            shadows: <Shadow>[
+                              Shadow(
+                                offset: Offset(0.2, 0.2),
+                                blurRadius: 5.0,
+                                color: Color.fromARGB(75, 0, 0, 0),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
