@@ -28,6 +28,7 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(top: 50),
       child: FutureBuilder(
           future: data,
           builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -39,7 +40,7 @@ class _HistoryState extends State<History> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: EdgeInsets.only(left: 20, top: 15, bottom: 15),
+                    padding: EdgeInsets.only(left: 20, top: 10, bottom: 5),
                     child: Text(
                       "History",
                       style: headerStyle,

@@ -40,70 +40,76 @@ class _MainMenuState extends State<MainMenu> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Center(
-            child: Text('Tempat Wisata'),
+          toolbarHeight: 80,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          title: Text(
+            "Tempat Wisata",
+            style: headerStyle,
           ),
           automaticallyImplyLeading: false,
-          backgroundColor: Color.fromARGB(255, 115, 75, 118),
         ),
-        body: FutureBuilder<MenuList>(
-            future: data,
-            builder: (context, snapshot) {
-              if (snapshot.data == null) {
-                return Container(child: Center(child: Text("Loading...")));
-              } else {
-                return Container(
-                  padding: EdgeInsets.all(20),
-                  child: ListView.builder(
-                      itemCount: snapshot.data.menu.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => _widgetPage[index]),
-                            );
-                          },
-                          child: Card(
-                            margin: EdgeInsets.only(bottom: 25),
-                            elevation: 1.0,
-                            shadowColor: Colors.purple[50],
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(15),
-                                      bottomLeft: Radius.circular(15)),
-                                  child: Image(
-                                    image: AssetImage(
-                                        '${snapshot.data.menu[index].img}'),
-                                    width: 150,
-                                    height: 125,
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                                Flexible(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text(
-                                      '${snapshot.data.menu[index].nama}',
-                                      style: iconStyle,
-                                      textAlign: TextAlign.right,
+        body: Container(
+          child: FutureBuilder<MenuList>(
+              future: data,
+              builder: (context, snapshot) {
+                if (snapshot.data == null) {
+                  return Container(child: Center(child: Text("Loading...")));
+                } else {
+                  return Container(
+                    padding: EdgeInsets.all(20),
+                    child: ListView.builder(
+                        itemCount: snapshot.data.menu.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          return InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => _widgetPage[index]),
+                              );
+                            },
+                            child: Card(
+                              margin: EdgeInsets.only(bottom: 25),
+                              elevation: 1.0,
+                              shadowColor: Colors.purple[50],
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(15),
+                                        bottomLeft: Radius.circular(15)),
+                                    child: Image(
+                                      image: AssetImage(
+                                          '${snapshot.data.menu[index].img}'),
+                                      width: 150,
+                                      height: 125,
+                                      fit: BoxFit.fill,
                                     ),
                                   ),
-                                )
-                              ],
+                                  Flexible(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(30.0),
+                                      child: Text(
+                                        '${snapshot.data.menu[index].nama}',
+                                        style: iconStyle,
+                                        textAlign: TextAlign.right,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
-                        );
-                      }),
-                );
-              }
-            }));
+                          );
+                        }),
+                  );
+                }
+              }),
+        ));
   }
 }
