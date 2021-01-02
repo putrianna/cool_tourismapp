@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'navbar.dart';
 
 /// This is the main application widget.
-class Monkasel extends StatelessWidget {
+class Bungkul extends StatelessWidget {
   static const String _title = 'Cool Tourism';
 
   @override

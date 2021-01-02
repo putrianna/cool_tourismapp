@@ -49,6 +49,9 @@ flutter:
   assets:
     - json/
     - images/monkasel/
+    - images/klenteng/
+    - images/bungkul/
+    - images/pakuwon/
     - images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
