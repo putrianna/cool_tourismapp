@@ -32,50 +32,28 @@ class _LandingPage extends State<LandingPage> {
               ),
               Container(
                 child: Center(
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                    child: InkWell(
-                      splashColor: Colors.blue.withAlpha(30),
-                      onTap: () {
-                        print('Card tapped.');
-                      },
-                      child: Container(
-                        width: 300,
-                        height: 100,
-                        child: Center(
-                            // mainAxisAlignment: MainAxisAlignment.center,
-                            // crossAxisAlignment: CrossAxisAlignment.center,
-                            // children: [
-
-                            // ],
-                            child: RichText(
-                          text: TextSpan(
-                            children: [
-                              WidgetSpan(
-                                // child: Icon(Icons.phone, size: 26),
-                                child: Text(
-                                  "Capture from Camera",
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                              // TextSpan(
-                              //   text: "(031) 5490410",
-                              //   style: TextStyle(
-                              //     // fontFamily: 'MaterialIcons', //<-- fontFamily
-                              //     fontSize: 18,
-                              //     color: Colors.black,
-                              //   ),
-                              // ),
-                            ],
-                          ),
-                        )
-                            // child: Text('A card that can be tapped'),
+                  child: Align(
+                    alignment: FractionalOffset(0.5, 0.95),
+                    child: Card(
+                      color: (Color.fromARGB(255, 115, 75, 118)),
+                      child: InkWell(
+                        splashColor: Colors.white.withAlpha(75),
+                        onTap: () {
+                          print('Card tapped.');
+                        },
+                        child: Container(
+                          width: 320,
+                          height: 50,
+                          child: Center(
+                            child: Text(
+                              'Start The Tour!',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontFamily: 'Segoe UI'),
                             ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
