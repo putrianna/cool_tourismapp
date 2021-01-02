@@ -11,12 +11,9 @@ class Todo extends StatefulWidget {
 }
 
 class _TodoState extends State<Todo> {
-  //inisialisasi TextStyle untuk header dan jadwal
-
   final komponen = Komponen();
   TextStyle headerStyle = Komponen.headerStyle;
   TextStyle iconStyle = Komponen.iconStyle;
-  TextStyle timeStyle = Komponen.timeStyle;
 
   Future<Data> data;
 
