@@ -35,13 +35,14 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text('Monumen Kapal Selam'),
-        ),
-        automaticallyImplyLeading: true,
-        backgroundColor: Color.fromARGB(255, 115, 75, 118),
-      ),
+      //turning off the appbar
+      // appBar: AppBar(
+      //   title: Center(
+      //     child: Text('Monumen Kapal Selam'),
+      //   ),
+      //   automaticallyImplyLeading: true,
+      //   backgroundColor: Color.fromARGB(255, 115, 75, 118),
+      // ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
