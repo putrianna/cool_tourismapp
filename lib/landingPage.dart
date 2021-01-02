@@ -1,4 +1,5 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
+import 'package:cool_tourismapp/menu.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
@@ -40,7 +41,10 @@ class _LandingPage extends State<LandingPage> {
                       child: InkWell(
                         splashColor: Colors.white.withAlpha(75),
                         onTap: () {
-                          print('Card tapped.');
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MainMenu()),
+                          );
                         },
                         child: Container(
                           width: 320,

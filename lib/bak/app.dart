@@ -1,4 +1,3 @@
-import 'package:cool_tourismapp/monkasel/monkasel_main.dart';
 import 'package:flutter/material.dart';
 import 'tabItem.dart';
 import 'bottomNavigation.dart';

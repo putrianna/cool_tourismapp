@@ -16,8 +16,6 @@ class Navbar extends StatefulWidget {
 /// This is the private State class that goes with Navbar.
 class _NavbarState extends State<Navbar> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Todo(),

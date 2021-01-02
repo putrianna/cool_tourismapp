@@ -204,3 +204,52 @@ Future<Data> getPakuwonList() async {
   var data = await rootBundle.loadString('json/jsonPakuwon.json');
   return Data.fromJson(json.decode(data));
 }
+
+// ---------------------------------- Menu Area --------------------------------//
+
+class MenuList {
+  List<Menu> menu;
+
+  MenuList({this.menu});
+
+  MenuList.fromJson(Map<String, dynamic> json) {
+    if (json['Menu'] != null) {
+      menu = new List<Menu>();
+      json['Menu'].forEach((v) {
+        menu.add(new Menu.fromJson(v));
+      });
+    }
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    if (this.menu != null) {
+      data['Menu'] = this.menu.map((v) => v.toJson()).toList();
+    }
+    return data;
+  }
+}
+
+class Menu {
+  String nama;
+  String img;
+
+  Menu({this.nama, this.img});
+
+  Menu.fromJson(Map<String, dynamic> json) {
+    nama = json['nama'];
+    img = json['img'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['nama'] = this.nama;
+    data['img'] = this.img;
+    return data;
+  }
+}
+
+Future<MenuList> getMenuList() async {
+  var data = await rootBundle.loadString('json/jsonMenu.json');
+  return MenuList.fromJson(json.decode(data));
+}

@@ -1,4 +1,4 @@
-import 'package:cool_tourismapp/monkasel/monkasel_main.dart';
+import 'package:cool_tourismapp/landingPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Coolapp());
@@ -10,7 +10,7 @@ class Coolapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: _title,
-      home: Monkasel(),
+      home: LandingPage(),
     );
   }
 }

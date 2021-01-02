@@ -1,0 +1,20 @@
+{
+    "Menu": [
+        {
+            "nama": "Monumen Kapal Selam",
+            "img": "images/bgUI.JPG"
+        },
+        {
+            "nama": "Klenteng Sanggar Agung",
+            "img": "images/bgUI.JPG"
+        },
+        {
+            "nama": "Taman Bungkul",
+            "img": "images/bgUI.JPG"
+        },
+        {
+            "nama": "Pakuwon Food Festival",
+            "img": "images/bgUI.JPG"
+        }
+    ]
+}

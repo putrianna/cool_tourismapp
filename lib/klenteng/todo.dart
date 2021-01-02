@@ -19,6 +19,7 @@ class _TodoState extends State<Todo> {
 
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     data = getKlentengList();

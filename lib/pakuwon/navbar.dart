@@ -1,7 +1,7 @@
 import 'package:cool_tourismapp/contactus.dart';
-import 'package:cool_tourismapp/monkasel/history.dart';
-import 'package:cool_tourismapp/monkasel/home.dart';
-import 'package:cool_tourismapp/monkasel/todo.dart';
+import 'package:cool_tourismapp/pakuwon/history.dart';
+import 'package:cool_tourismapp/pakuwon/home.dart';
+import 'package:cool_tourismapp/pakuwon/todo.dart';
 import 'package:flutter/material.dart';
 
 /// This is the stateful widget that the main application instantiates.
@@ -15,8 +15,6 @@ class Navbar extends StatefulWidget {
 /// This is the private State class that goes with Navbar.
 class _NavbarState extends State<Navbar> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Home(),
     Todo(),
