@@ -1,6 +1,6 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
+import 'package:cool_tourismapp/komponen.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 //Done! The code is still spaghetti AF tho. I'll come back and fix later!
 //If you can find a way to improve the code, let me know! :D - Putri Anna
@@ -158,18 +158,4 @@ class _HomeState extends State<Home> {
           }),
     );
   }
-}
-
-class TemaTeks {
-  static TextStyle headerStyle = TextStyle(
-      fontSize: 25, fontWeight: FontWeight.bold, color: HexColor("#A15D98"));
-  static TextStyle narasiStyle =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w300);
-  static TextStyle timeStyle = TextStyle(
-      fontSize: 18, fontWeight: FontWeight.w300, color: HexColor("#A15D98"));
-  static TextStyle iconStyle = TextStyle(
-      fontSize: 15,
-      fontWeight: FontWeight.w300,
-      fontStyle: FontStyle.italic,
-      color: HexColor("#A15D98"));
 }

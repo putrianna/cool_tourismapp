@@ -1,7 +1,6 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
-import 'package:cool_tourismapp/home.dart';
+import 'package:cool_tourismapp/komponen.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 //Done! The code is still spaghetti AF tho. I'll come back and fix later!
 //If you can find a way to improve the code, let me know! :D - Putri Anna
@@ -14,6 +13,7 @@ class Todo extends StatefulWidget {
 class _TodoState extends State<Todo> {
   //inisialisasi TextStyle untuk header dan jadwal
 
+  final fontString = IconString();
   TextStyle headerStyle = TemaTeks.headerStyle;
   TextStyle iconStyle = TemaTeks.iconStyle;
   TextStyle timeStyle = TemaTeks.timeStyle;
@@ -25,31 +25,6 @@ class _TodoState extends State<Todo> {
     // TODO: implement initState
     super.initState();
     data = getDataList();
-  }
-
-  IconData fontAwesomeString(String name) {
-    switch (name) {
-      case 'swimmer':
-        return FontAwesomeIcons.swimmer;
-      case 'binoculars':
-        return FontAwesomeIcons.binoculars;
-      case 'hamburger':
-        return FontAwesomeIcons.hamburger;
-      case 'camera':
-        return FontAwesomeIcons.camera;
-      case 'book':
-        return FontAwesomeIcons.book;
-      case 'userFriends':
-        return FontAwesomeIcons.userFriends;
-      case 'car':
-        return FontAwesomeIcons.car;
-      case 'swimmingPool':
-        return FontAwesomeIcons.swimmingPool;
-      case 'fastfood':
-        return Icons.fastfood;
-      default:
-        return Icons.gamepad;
-    }
   }
 
   @override
@@ -142,11 +117,9 @@ class _TodoState extends State<Todo> {
                                                   MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 Icon(
-                                                  fontAwesomeString(snapshot
-                                                      .data
-                                                      .toDo
-                                                      .todos[index]
-                                                      .nama),
+                                                  fontString.fontAwesomeString(
+                                                      snapshot.data.toDo
+                                                          .todos[index].nama),
                                                   size: 40,
                                                 ),
                                                 Text(
@@ -191,11 +164,9 @@ class _TodoState extends State<Todo> {
                                                   MainAxisAlignment.spaceAround,
                                               children: [
                                                 Icon(
-                                                  fontAwesomeString(snapshot
-                                                      .data
-                                                      .toDo
-                                                      .fasil[index]
-                                                      .nama),
+                                                  fontString.fontAwesomeString(
+                                                      snapshot.data.toDo
+                                                          .fasil[index].nama),
                                                   size: 40,
                                                 ),
                                                 Text(
