@@ -21,7 +21,6 @@ class _NavbarState extends State<Navbar> {
     Todo(),
     History(),
     ContactUs(),
-    LandingPage(), //dont remove it
   ];
 
   void _onItemTapped(int index) {
@@ -61,11 +60,6 @@ class _NavbarState extends State<Navbar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             label: 'About Us',
-          ),
-          BottomNavigationBarItem(
-            //dont remove it
-            icon: Icon(Icons.warning),
-            label: 'Experimental',
           ),
         ],
         currentIndex: _selectedIndex,

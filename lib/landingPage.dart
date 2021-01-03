@@ -89,7 +89,7 @@ class _LandingPage extends State<LandingPage> {
                     ),
                     Container(
                       child: Align(
-                        alignment: FractionalOffset(0.24, 0.2),
+                        alignment: FractionalOffset(0.24, 0.19),
                         child: Text(
                           "Wisata Soerabaja",
                           style: TextStyle(
