@@ -34,6 +34,26 @@ class _LandingPage extends State<LandingPage> {
               ),
               Container(
                 child: Center(
+                    // child: Align(
+                    //   // alignment: FractionalOffset(0.5, 0.95),
+                    //   child: ElevatedButton.icon(
+                    //     icon: Icon(Icons.arrow_right_alt_rounded),
+                    //     label: Text("Start the tour"),
+                    //     // style: BoxDecoration(),
+                    //     onPressed: () {
+                    //       Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //           builder: (context) => MainMenu(),
+                    //         ),
+                    //       );
+                    //     },
+                    //   ),
+                    // ),
+                    ),
+              ),
+              Container(
+                child: Center(
                   child: Align(
                     alignment: FractionalOffset(0.5, 0.95),
                     child: Card(
