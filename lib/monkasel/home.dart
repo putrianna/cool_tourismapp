@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             Container(
-                              height: 200,
+                              height: 150,
                               padding: EdgeInsets.all(20),
                               child: Wrap(
                                 spacing: 20,
@@ -147,7 +147,22 @@ class _HomeState extends State<Home> {
                                   )
                                 ],
                               ),
-                            )
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(20),
+                              child: Wrap(
+                                spacing: 10,
+                                runSpacing: 15,
+                                children: [
+                                  Text(
+                                    "About",
+                                    style: headerStyle,
+                                  ),
+                                  Text('${snapshot.data.about.narasi}',
+                                      style: narasiStyle)
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
