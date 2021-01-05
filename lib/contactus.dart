@@ -33,7 +33,7 @@ class _ContactUs extends State<ContactUs> {
                   backgroundColor: Color.fromARGB(35, 0, 0, 0),
                 ),
               ),
-              Positioned(
+              Container(
                 child: Center(
                   child: Card(
                     elevation: 8,
@@ -42,13 +42,13 @@ class _ContactUs extends State<ContactUs> {
                     ),
                     child: Container(
                       width: 300,
-                      height: 300,
+                      height: 220,
                       child: Column(
                         // mainAxisAlignment: MainAxisAlignment.center,
                         // crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Positioned(
-                            bottom: 100,
+                            bottom: 50,
                             left: 50,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -84,19 +84,17 @@ class _ContactUs extends State<ContactUs> {
                               ],
                             ),
                           ),
-                          Container(
-                            child: GridView.count(
-                              crossAxisCount: 2,
-                              children: <Widget>[
-                                Container(
-                                  child: IconButton(
-                                    icon: new Icon(Icons.map),
-                                    onPressed: () {},
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
+                          // GridView.count(
+                          //   crossAxisCount: 2,
+                          //   children: <Widget>[
+                          //     Container(
+                          //       child: IconButton(
+                          //         icon: new Icon(Icons.map),
+                          //         onPressed: () {},
+                          //       ),
+                          //     )
+                          //   ],
+                          // ),
                         ],
                       ),
                     ),
