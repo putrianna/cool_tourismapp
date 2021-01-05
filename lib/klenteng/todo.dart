@@ -121,9 +121,11 @@ class _TodoState extends State<Todo> {
                                                   size: 40,
                                                 ),
                                                 Text(
-                                                    snapshot.data.toDo
-                                                        .todos[index].text,
-                                                    style: iconStyle)
+                                                  snapshot.data.toDo
+                                                      .todos[index].text,
+                                                  style: iconStyle,
+                                                  textAlign: TextAlign.center,
+                                                )
                                               ],
                                             ),
                                           );

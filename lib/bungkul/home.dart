@@ -1,6 +1,8 @@
 import 'package:cool_tourismapp/jsonDataCatcher.dart';
 import 'package:cool_tourismapp/komponen.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 //Done! The code is still spaghetti AF tho. I'll come back and fix later!
 //If you can find a way to improve the code, let me know! :D - Putri Anna
@@ -103,8 +105,9 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             Container(
-                              height: 200,
-                              padding: EdgeInsets.all(20),
+                              height: 100,
+                              padding:
+                                  EdgeInsets.only(top: 5, left: 20, right: 20),
                               child: Wrap(
                                 spacing: 20,
                                 runSpacing: 15,
@@ -129,25 +132,63 @@ class _HomeState extends State<Home> {
                                           )
                                         ],
                                       ),
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            '${snapshot.data.about.jadwal[2]}',
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(top: 20),
+                              height: 200,
+                              padding: EdgeInsets.only(left: 20, right: 20),
+                              child: Wrap(
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(FontAwesomeIcons.mapMarkerAlt,
+                                          size: 30, color: HexColor("#A15D98")),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Flexible(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            '${snapshot.data.about.alamat}',
                                             style: narasiStyle,
+                                            textAlign: TextAlign.left,
                                           ),
-                                          Text(
-                                            '${snapshot.data.about.jadwal[3]}',
-                                            style: timeStyle,
-                                          )
-                                        ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        FontAwesomeIcons.phoneAlt,
+                                        size: 30,
+                                        color: HexColor("#A15D98"),
+                                      ),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Flexible(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            '${snapshot.data.about.notelp}',
+                                            style: narasiStyle,
+                                            textAlign: TextAlign.right,
+                                          ),
+                                        ),
                                       )
                                     ],
                                   )
                                 ],
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),

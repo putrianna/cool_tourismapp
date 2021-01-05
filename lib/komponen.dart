@@ -37,6 +37,24 @@ class Komponen {
         return FontAwesomeIcons.swimmingPool;
       case 'fastfood':
         return Icons.fastfood;
+      case 'skate':
+        return FontAwesomeIcons.skating;
+      case 'run':
+        return FontAwesomeIcons.running;
+      case 'tree':
+        return FontAwesomeIcons.tree;
+      case 'pray':
+        return FontAwesomeIcons.pray;
+      case 'prayinghands':
+        return FontAwesomeIcons.prayingHands;
+      case 'dragon':
+        return FontAwesomeIcons.dragon;
+      case 'laughbeam':
+        return FontAwesomeIcons.laughBeam;
+      case 'shoppingbag':
+        return FontAwesomeIcons.shoppingBag;
+      case 'music':
+        return FontAwesomeIcons.music;
       default:
         return Icons.gamepad;
     }

@@ -6,15 +6,15 @@
         },
         {
             "nama": "Klenteng Sanggar Agung",
-            "img": "images/bgUI.JPG"
+            "img": "images/klenteng/klenteng1.jpg"
         },
         {
             "nama": "Taman Bungkul",
-            "img": "images/bgUI.JPG"
+            "img": "images/bungkul/bungkul1.png"
         },
         {
             "nama": "Pakuwon Food Festival",
-            "img": "images/bgUI.JPG"
+            "img": "images/pakuwon/pakuwon1.png"
         }
     ]
 }

@@ -31,13 +31,6 @@ class _NavbarState extends State<Navbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text('Taman Bungkul'),
-        ),
-        automaticallyImplyLeading: true,
-        backgroundColor: Color.fromARGB(255, 115, 75, 118),
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
