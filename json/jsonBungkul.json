@@ -1,0 +1,89 @@
+{ 
+    "About":{
+        "nama": "Taman Bungkul",
+        "alamat": "Jl. Taman Bungkul, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241",
+        "notelp": "-",
+        "narasi": "Taman Bungkul adalah taman wisata kota yang terletak di pusat kota Surabaya, tepatnya pada Jalan Raya Darmo. Sejak diresmikan pada 21 Maret 2007, Perkembangan Taman Bungkul semakin pesat. Salah satunya disebabkan beberapa  sarana-sarana penunjang.",
+        "jadwal":[
+            "Senin - Minggu",
+            "06.00 - 23.00 WIB"
+        ]
+    },
+    "to-do":{
+        "todos": [
+            {
+                "nama": "skate",
+                "text": "Skate"
+            },
+            {
+                "nama": "run",
+                "text": "Lari Pagi"
+            },
+            {
+                "nama": "hamburger",
+                "text": "Kuliner"
+            },
+            {
+                "nama": "camera",
+                "text": "Berfoto"
+            },
+            {
+                "nama": "book",
+                "text": "Belajar"
+            },
+            {
+                "nama": "userFriends",
+                "text": "Hangout"
+            }
+        ],
+        "fasil": [
+            {
+                "nama": "car",
+                "text": "Tempat Parkir"
+            },
+            {
+                "nama": "tree",
+                "text": "Tempat Teduh"
+            },
+            {
+                "nama": "fastfood",
+                "text": "Makanan & Minuman"
+            }
+        ]
+    },
+    "histori":[
+        {
+            "img": "images/bungkul/histori-2.jpg",
+            "tanggal": "1400-1481",
+            "event": "Ki Ageng Supo (Sunan Bungkul) tinggal di desa Bungkul"
+        },
+        {
+            "img": "images/bungkul/histori-1.jpg",
+            "tanggal": "1481",
+            "event": "Sunan Bungkul meninggal dimakamkan di desanya"
+        },
+        {
+            "img": "images/bungkul/bungkul1.png",
+            "tanggal": "2007",
+            "event": "Taman Bungkul dibangun"
+        }
+    ],
+    "images":[
+        {
+            "id": "1",
+            "name": "images/bungkul/bungkul1.png"
+        },
+        {
+            "id": "2",
+            "name": "images/bungkul/bungkul2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "images/bungkul/histori-1.jpg"
+        },
+        {
+            "id": "4",
+            "name": "images/bungkul/histori-2.jpg"
+        }    
+    ]
+}

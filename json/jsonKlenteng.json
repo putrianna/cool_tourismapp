@@ -1,0 +1,92 @@
+{ 
+    "About":{
+        "nama": "Klenteng Sanggar Agung",
+        "alamat": "Jl. Sukolilo No. 100, Bulak, Surabaya, Jawa Timur, Indonesia, 60122.",
+        "notelp": "(031) 3816133",
+        "narasi": "Kelenteng Sanggar Agung atau Klenteng Hong San Tang adalah sebuah klenteng di Kota Surabaya. Alamatnya berada di Jalan Sukolilo Nomor 100, Pantai Ria Kenjeran, Surabaya. Kuil ini, selain menjadi tempat ibadah bagi pemeluk Tridharma, juga menjadi tempat tujuan wisata bagi para wisatawan. Klenteng ini dibuka pada tahun 1999.",
+        "jadwal":[
+            "Senin - Jumat",
+            "08.00 - 16.00 WIB",
+            "Sabtu - Minggu",
+            "08.00 - 17.00 WIB"
+        ]
+    },
+    "to-do":{
+        "todos": [
+            {
+                "nama": "pray",
+                "text": "Beribadah"
+            },
+            {
+                "nama": "prayinghands",
+                "text": "Kegiatan Keagamaan"
+            },
+            {
+                "nama": "hamburger",
+                "text": "Kuliner"
+            },
+            {
+                "nama": "camera",
+                "text": "Berfoto"
+            },
+            {
+                "nama": "userFriends",
+                "text": "Hangout"
+            }
+        ],
+        "fasil": [
+            {
+                "nama": "car",
+                "text": "Parking Lot"
+            },
+            {
+                "nama": "dragon",
+                "text": "Patung Naga"
+            },
+            {
+                "nama": "fastfood",
+                "text": "Food & Drinks"
+            }
+        ]
+    },
+    "histori":[
+        {
+            "img": "images/klenteng/klenteng3.jpg",
+            "tanggal": "1978",
+            "event": "Pembangunan Pertama kali klenteng oleh keluarga Soetiadji Yudho"
+        },
+        {
+            "img": "images/klenteng/klenteng4.jpg",
+            "tanggal": "1979",
+            "event": "Dibangun patung Dewi Kwan in dibelakang klenteng "
+        },
+        {
+            "img": "images/klenteng/klenteng2.jpg",
+            "tanggal": "1999",
+            "event": "Klenteng berpindah lokasi di kenjeran park"
+        },
+        {
+            "img": "images/klenteng/klenteng1.jpg",
+            "tanggal": "2015",
+            "event": "Dibangunkan jalan samping bagi para wisatawan untuk patung Dewi Kwan in"
+        }
+    ],
+    "images":[
+        {
+            "id": "1",
+            "name": "images/klenteng/klenteng1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "images/klenteng/klenteng2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "images/klenteng/klenteng3.jpg"
+        },
+        {
+            "id": "4",
+            "name": "images/klenteng/klenteng4.jpg"
+        }    
+    ]
+}

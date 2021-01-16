@@ -1,0 +1,87 @@
+{ 
+    "About":{
+        "nama": "Pakuwon Food Festival",
+        "alamat": "Jl. Kejawan Putih Mutiara No.17, Kejawaan Putih Tamba, Kec. Mulyorejo, Kota SBY, Jawa Timur 60112",
+        "notelp": "(031) 58208800",
+        "narasi": "Food Festival Pakuwon City adalah salah satu destinasi wisata kuliner terkenal di Kota Surabaya. Ini merupakan food court yang sangat istimewa karena merupakan bagian dari Mall Pakuwon City yang terkenal. Food court yang satu juga sangat terkenal khusunya bagi masyarakat kota Surabaya maupun mereka yang tinggal di luar Kota Surabaya.",
+        "jadwal":[
+            "Senin - Jumat",
+            "17.00 - 22.00 WIB",
+            "Sabtu - Minggu",
+            "17.00 - 23.00 WIB"
+        ]
+    },
+    "to-do":{
+        "todos": [
+            {
+                "nama": "laughbeam",
+                "text": "Bermain"
+            },
+            {
+                "nama": "shoppingbag",
+                "text": "Belanja"
+            },
+            {
+                "nama": "hamburger",
+                "text": "Kuliner"
+            },
+            {
+                "nama": "camera",
+                "text": "Berfoto"
+            },
+            {
+                "nama": "userFriends",
+                "text": "Hangout"
+            }
+        ],
+        "fasil": [
+            {
+                "nama": "car",
+                "text": "Tempat Parkir"
+            },
+            {
+                "nama": "music",
+                "text": "Musik"
+            },
+            {
+                "nama": "fastfood",
+                "text": "Makanan & Minuman"
+            }
+        ]
+    },
+    "histori":[
+        {
+            "img": "images/pakuwon/pakuwon6.jpg",
+            "tanggal": "1982",
+            "event": "PT Pakuwon Jati Tbk didirikan"
+        },
+        {
+            "img": "images/pakuwon/pakuwon5.jpg",
+            "tanggal": "2001",
+            "event": "Pembangunan Perumahan Pakuwon City di wilayah Surabaya Timur"
+        },
+        {
+            "img": "images/pakuwon/pakuwon1.png",
+            "tanggal": "2008",
+            "event": "Didirikan sebagai bagian dari mall Pakuwon City"
+        }
+    ],
+    "images":[
+        {
+            "id": "1",
+            "name": "images/pakuwon/pakuwon1.png"
+        },
+        {
+            "id": "2",
+            "name": "images/pakuwon/pakuwon2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "images/pakuwon/pakuwon5.jpg"
+        },
+        {
+            "id": "4",
+            "name": "images/pakuwon/pakuwon6.jpg"
+        }    
+    ]
+}
